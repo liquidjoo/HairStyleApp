@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+
+    <string-array name="menu">
+        <item>남자</item>
+        <item>여자</item>
+        <item>Menu3</item>
+        <item>Menu4</item>
+        <item>Menu5</item>
+        <item>Menu6</item>
+        <item>Menu7</item>
+        <item>Menu8</item>
+    </string-array>
+    
+    
+    <string name="back_ground_rgb">#EEEEEE</string>
+    <string name="main_rgb">#FF7171</string>
+    
+    <string name="app_name">HairStyle</string>
+    <string name="app_id">1472192633021159</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_hair_list">Hair_list</string>
+    <string name="title_activity_adpater">MainActivity</string>
+    <string name="title_activity_fb_login">Fb_login</string>
+    <string name="title_activity_image_upload_service">Image_upload_service</string>
+    <string name="title_activity_upload_to_server">Upload_to_server</string>
+    <string name="title_activity_snslogin">SNSLogin</string>
+    <string name="title_activity_registe">Registe</string>
+    <string name="action_settings">Settings</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="Email">Email</string>
+    <string name="Gender">Gender</string>
+    <string name="LoginGet">Login - Get</string>
+    <string name="LoginPost">Login - Post</string>
+    <string name="App">Login Application</string>
+    <string name="LoginStatus">Login Status</string>
+    <string name="LoginRole">Login Role</string>
+    <string name="Status">Not login</string>
+    <string name="Role">Not assigned</string>
+    <string name="method">Login Method</string>
+    <string name="Choose">Choose Method</string>
+    <string name="title_section1">first Tab</string>
+    <string name="title_section2">second Tab</string>
+    <string name="title_section3">Third Tab</string>
+    <string name="TextView1">Hello Dear!</string>
+    <string name="TextView2">This is first tab fragment!</string>
+    <string name="TextView3">You will see new menus </string>
+    <string name="TextView4">when you push the menu key!</string>
+    <string name="menu">menu</string>
+    <string name="menu2">menu2</string>
+    
+    <string name="title_activity_image_click">Image_click</string>
+    <string name="title_activity_maintab">Maintab</string>
+    <string name="title_activity_tab">Tab</string>
+    <string name="sample_show_log">Show Log</string>
+    <string name="sample_hide_log">Hide Log</string>
+    <string name="title_activity_fragment1">Fragment1</string>
+    <string name="title_activity_frag_activty">FragActivty</string>
+    <string name="title_activity_logo">Logo</string>
+    <string name="title_activity_background">Background</string>
+
+    
+    
+      <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="title_activity_main">MainActivity</string>
+    
+    <string name="title_activity_sibal">Sibal</string>
+    
+    
+</resources>

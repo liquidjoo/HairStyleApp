@@ -1,0 +1,110 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sample_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_rgb"
+    android:orientation="vertical" >
+
+    <ViewAnimator
+        android:id="@+id/sample_output"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="0.37" >
+
+        <ScrollView
+            style="@style/Widget.SampleMessageTile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                
+                <TextView 
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="My Info "
+                    android:textSize="30dp"
+                    android:textStyle="bold"                    
+                    />
+
+                <TextView
+                    android:id="@+id/profile_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/profile_name"
+                    android:layout_marginTop="7dp"
+                    
+                    android:text="gender"
+                    android:textSize="20dp"
+                    android:textColor="#FF707070" />
+
+                <TextView
+                    android:id="@+id/profile_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/profile_gender"
+                    android:layout_marginTop="7dp"
+                    android:textSize="20dp"
+                    android:text="email"
+                    android:textColor="#FF909090" />
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/ppro"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignTop="@+id/title"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="11dp"
+                    android:src="@drawable/com_facebook_profile_picture_blank_square" />
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/title"
+                    android:layout_below="@+id/title"
+                    android:layout_marginTop="11dp"
+                    android:text="header_name"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <fragment
+            android:id="@+id/log_fragment"
+            android:name="com.example.android.common.logger.LogFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ViewAnimator>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <com.example.android.common.view.SlidingTabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
+
+</LinearLayout>

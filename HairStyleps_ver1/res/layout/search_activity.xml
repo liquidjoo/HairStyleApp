@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="310dp"
+    android:background="#696969"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="2dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:text="카테고리 검색"
+            android:textColor="#000000"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/back_ground_rgb" >
+
+            <RadioGroup
+                android:id="@+id/Permanent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/HairLength"
+                android:layout_below="@+id/HairLength"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/search_text_color"
+                    android:textStyle="bold"
+                    android:text="파마 유무"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <RadioButton
+                    android:id="@+id/Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/search_text_color"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="네" />
+
+                <RadioButton
+                    android:id="@+id/No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/search_text_color"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="아니오" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/Gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="성별        "
+                    android:textStyle="bold"
+                    android:textColor="@color/search_text_color"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <RadioButton
+                    android:id="@+id/Male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/search_text_color"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="남자" />
+
+                <RadioButton
+                    android:id="@+id/Female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/search_text_color"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="여자" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/HairLength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/Gender"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="머리 길이"
+                    android:textStyle="bold"
+                    android:textColor="@color/search_text_color"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <RadioButton
+                    android:id="@+id/Long"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/search_text_color"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="긴머리" />
+
+                <RadioButton
+                    android:id="@+id/Mid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/search_text_color"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="중간" />
+
+                <RadioButton
+                    android:id="@+id/Short"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/search_text_color"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="짧은머리" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/Color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/Permanent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/search_text_color"
+                    android:textStyle="bold"
+                    android:text="염색 유무"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <RadioButton
+                    android:id="@+id/Yes2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/search_text_color"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="네" />
+
+                <RadioButton
+                    android:id="@+id/No2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/search_text_color"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="아니오" />
+            </RadioGroup>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/noserchbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.60"
+            android:text="취소" />
+
+        <Button
+            android:id="@+id/serchbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.60"
+            android:text="확인" />
+    </LinearLayout>
+
+</LinearLayout>

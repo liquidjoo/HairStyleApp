@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framelay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/back_ground_rgb"
+    tools:context="com.example.main.MainActivity" >
+
+     <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_gravity="center"
+         android:adjustViewBounds="true"
+         android:maxWidth="200dp"
+         android:paddingBottom="200dp"
+         android:src="@drawable/logo_1" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/shopbutton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="52dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/frag" />
+
+        <Button
+            android:id="@+id/gallerybutton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignBaseline="@+id/boardbutton"
+            android:layout_alignBottom="@+id/boardbutton"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/gal" />
+
+        <Button
+            android:id="@+id/boardbutton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignBaseline="@+id/shopbutton"
+            android:layout_alignBottom="@+id/shopbutton"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/boad" />
+
+    </RelativeLayout>
+
+</FrameLayout>

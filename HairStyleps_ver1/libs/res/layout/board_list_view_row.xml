@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	list_view의 한 아이템(row)에 사용할 레이아웃
+	http://croute.me/413
+	croute / 2011.05.04 
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/back_ground_rgb"
+    android:minHeight="60dp"
+    android:orientation="horizontal" >
+
+	<!-- 유저 프로필 이미지 -->
+	<ImageView
+		android:id="@+id/list_view_row_profile_thumbnail"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:layout_margin="10dp"/>
+	<!-- /유저 프로필 이미지 -->
+	<!-- 유저 스크린네임, 텍스트 -->
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="10dp"
+		android:layout_marginRight="10dp"
+		android:orientation="vertical" >
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" >
+			<TextView
+				android:id="@+id/list_view_row_user_screen_name"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:textSize="13dp"
+				android:textStyle="bold"
+				android:textColor="#666666" />
+			<TextView
+				android:id="@+id/list_view_row_create_at"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="0"
+				android:textSize="10dp"
+				android:textColor="#666666" />
+		</LinearLayout>			
+		<TextView
+			android:id="@+id/list_view_row_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="1dp"
+			android:textSize="11dp"
+			android:ellipsize="end"
+			android:maxLines="2"
+			android:textColor="#666666" />
+	</LinearLayout>
+	<!-- /유저 스크린네임, 텍스트 -->
+</LinearLayout>
